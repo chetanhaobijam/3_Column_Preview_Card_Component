@@ -1,0 +1,58 @@
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  /* Fonts */
+  --normal-font: 400 15px 'Lexend Deca', Arial, sans-serif;
+  --big-font: 'Big Shoulders Display', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font: var(--normal-font);
+  background-color: var(--very-light-gray);
+}
+
+.card:first-child {
+  background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+
+.card:last-child {
+  background-color: var(--very-dark-cyan);
+}
+
+.title {
+  color: var(--very-light-gray);
+}
+
+p {
+  color: var(--transparent-white);
+}
+
+.more {
+  background-color: var(--very-light-gray);
+}
+.attribution { 
+  position: absolute;
+  inset: auto auto 5px auto;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
