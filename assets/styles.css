@@ -20,10 +20,27 @@
 body, html {
   font: var(--normal-font);
   background-color: var(--very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.card {
+  padding: 3rem;
 }
 
 .card:first-child {
   background-color: var(--bright-orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .card:nth-child(2) {
@@ -32,19 +49,76 @@ body, html {
 
 .card:last-child {
   background-color: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 6ch;
 }
 
 .title {
   color: var(--very-light-gray);
+  font-family: var(--big-font);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 p {
   color: var(--transparent-white);
+  font-size: 0.9rem;
+  line-height: 2em;
+  width: 85%;
+  margin-bottom: 5rem;
 }
 
 .more {
   background-color: var(--very-light-gray);
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
 }
+
+.card:first-child .more {
+  border: 2px solid var(--bright-orange);
+  color: var(--bright-orange);
+}
+
+.card:first-child .more:hover {
+  border-color: var(--very-light-gray);
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) .more {
+  border: 2px solid var(--dark-cyan);
+  color: var(--dark-cyan);
+}
+
+.card:nth-child(2) .more:hover {
+  border-color: var(--very-light-gray);
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+.card:last-child .more {
+  border: 2px solid var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.card:last-child .more:hover {
+  border-color: var(--very-light-gray);
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+}
+
 .attribution { 
   position: absolute;
   inset: auto auto 5px auto;
