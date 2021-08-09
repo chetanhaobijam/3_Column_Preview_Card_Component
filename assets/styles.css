@@ -26,6 +26,15 @@ body, html {
   min-height: 100vh;
 }
 
+h1 {
+  position: absolute;
+  left: -100000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: auto;
+}
+
 .main {
   display: flex;
   width: 70%;
@@ -65,17 +74,17 @@ body, html {
 .title {
   color: var(--very-light-gray);
   font-family: var(--big-font);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-p {
+.description {
   color: var(--transparent-white);
   font-size: 0.9rem;
   line-height: 2em;
   width: 85%;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .more {
@@ -86,7 +95,7 @@ p {
   font-weight: 700;
   cursor: pointer;
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .card:first-child .more {
